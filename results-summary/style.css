@@ -8,28 +8,59 @@
 :root {
     --gradient1: #6743FF;
     --gradient2: #312CE8;
-    --gradient4: #4C21C8;
-    --gradient5: #4734F0;
 
     --default-font: HankenGrotesk;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
 }
 
 body {
     font-family: var(--default-font);
 }
 
+.section-result {
+    display: grid;
+    justify-content: center;
 
+    width: 230px;
+    border-radius: 20px;
+    padding: 25px 50px;
 
-.result {
     color: white;
     background-image: linear-gradient(var(--gradient1),var(--gradient2));
     text-align: center;
 }
 
-.circle {
-    z-index: 1;
-    background-image: linear-gradient(var(--gradient3),var(--gradient4));
+.section-title {
+    font-size: 1.5em;
 }
+
+.result-rank {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.result-score {
+    width: 200px;
+    height: 200px;;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.151);
+    border-radius: 50%;
+}
+
+.result-score > span {
+    font-weight: bold;
+    font-size: 70px;
+
+    display: grid;
+    justify-content: center;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
