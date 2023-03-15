@@ -6,8 +6,11 @@
 }
 
 :root {
-    --gradient1: #6743FF;
-    --gradient2: #312CE8;
+    --gradient-1: linear-gradient(#6743FF, #312CE8);
+    --gradient-2: linear-gradient(#00000033, transparent);
+    --background: linear-gradient(white, #e7e7e7);
+    --grey: #a3a3a3;
+    --lightgrey: #c7c7c7;
 
     --default-font: HankenGrotesk;
 }
@@ -20,23 +23,34 @@
 
 body {
     font-family: var(--default-font);
+    background-image: var(--background);
 }
 
-.section-result {
-    display: grid;
+.container  {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: white;  /* ??? */
+}
 
+.section {
     width: 230px;
-    border-radius: 20px;
+    height: 420px;
     padding: 25px 50px;
-
-    color: white;
-    background-image: linear-gradient(var(--gradient1),var(--gradient2));
-    text-align: center;
 }
 
 .section-title {
     font-size: 1.5em;
+}
+
+/* left container */
+.section-result {
+    border-radius: 20px;
+    
+    color: white;
+    background-image: var(--gradient-1);
+    text-align: center;
 }
 
 .result-rank {
@@ -45,22 +59,70 @@ body {
     margin: 10px 0;
 }
 
-.result-score {
+.circle {
     width: 200px;
     height: 200px;;
     margin: 30px auto;
-    background-color: rgba(0, 0, 0, 0.151);
+    background-image: var(--gradient-2);
     border-radius: 50%;
+
+    font-weight: bolder;
+
+    display: inline-block;
+    color: var(--grey);
 }
 
-.result-score > span {
-    font-weight: bold;
+.circle > span {
+    color: white;
     font-size: 70px;
 
+    margin-top: 25%;
     display: grid;
-    justify-content: center;
 }
 
+.comment {
+    color: var(--lightgrey);
+}
+
+/* right container */
+.section-summary {
+    background-color: white;
+}
+
+.box01 {
+    background-color: lightgreen;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.box01-title > h3 {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.box01-score > span {
+    font-weight: bold;
+}
+
+
+
+/* PLACEHOLDER */
+.box01-score {
+    background-color: #8484dd;
+}
+
+.box01-title {
+    background-color: rgba(46, 46, 46, 0.555);
+}
+/* PLACEHOLDER */
+
+
+@media(max-width: 700px) {
+    .container {
+        display: inline-block;
+    }
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
