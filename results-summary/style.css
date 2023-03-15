@@ -11,6 +11,7 @@
     --background: linear-gradient(white, #e7e7e7);
     --grey: #a3a3a3;
     --lightgrey: #c7c7c7;
+    --button: #303B59;
 
     --default-font: HankenGrotesk;
 }
@@ -89,33 +90,71 @@ body {
     background-color: white;
 }
 
-.box01 {
-    background-color: lightgreen;
+.box {
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
     display: flex;
-    padding: 10px;
+    
+
+    margin: 15px 0;
+
     align-items: center;
+    justify-content: space-between;
 }
 
-.box01-title > h3 {
-    display: inline-block;
-    margin-right: 60px;
+.box-title {
+    display: flex;
 }
 
-.box01-score > span {
+.box-score {
+    justify-content: end;
+    color: var(--grey);
+}
+
+.box-score > span {
+    color: #000000c7;
     font-weight: bold;
 }
 
-
-
-/* PLACEHOLDER */
-.box01-score {
-    background-color: #8484dd;
+/* box colors config */
+.box01 {
+    color: #b84341;
+    background-color: #b8434118;
 }
 
-.box01-title {
-    background-color: rgba(46, 46, 46, 0.555);
+.box02 {
+    color: #eb9617;
+    background-color: #eb961718;
 }
-/* PLACEHOLDER */
+
+.box03 {
+    color: #4c966b;
+    background-color: #4c966b18;
+}
+
+.box04 {
+    color: #60319c;
+    background-color: #60319c18;
+}
+
+
+button {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    padding: 15px 0;
+    border: none;
+    border-radius: 30px;
+
+    color: white;
+
+    background-color: var(--button);
+}
+
+button:hover {
+    background-image: var(--gradient-1);
+}
 
 
 @media(max-width: 700px) {
