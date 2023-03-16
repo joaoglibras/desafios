@@ -8,7 +8,6 @@
 :root {
     --gradient-1: linear-gradient(#6743FF, #312CE8);
     --gradient-2: linear-gradient(#00000033, transparent);
-    --background: linear-gradient(white, #e7e7e7);
     --grey: #a3a3a3;
     --lightgrey: #c7c7c7;
     --button: #303B59;
@@ -24,34 +23,41 @@
 
 body {
     font-family: var(--default-font);
-    background-image: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
 }
 
 .container  {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    background-color: white;  /* ??? */
+    background-color: white;
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.089);
 }
 
 .section {
     width: 230px;
-    height: 420px;
-    padding: 25px 50px;
+    padding: 20px 50px;
 }
 
 .section-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 /* left container */
 .section-result {
     border-radius: 20px;
-    
     color: white;
     background-image: var(--gradient-1);
     text-align: center;
+}
+
+h1.section-title {
+    color: var(--lightgrey);
 }
 
 .result-rank {
@@ -87,20 +93,31 @@ body {
 
 /* right container */
 .section-summary {
-    background-color: white;
+    text-align: center;
+}
+
+h2.section-title {
+    text-align: left;
+}
+
+.box-container {
+    margin: 40px 0;
 }
 
 .box {
-    padding: 15px;
-    width: 220px;
-    border-radius: 10px;
     display: flex;
-    
 
-    margin: 15px 0;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px auto;
 
     align-items: center;
     justify-content: space-between;
+}
+
+img {
+    margin-right: 15px;
 }
 
 .box-title {
@@ -119,30 +136,30 @@ body {
 
 /* box colors config */
 .box01 {
-    color: #b84341;
+    color: #da4747;
     background-color: #b8434118;
 }
 
 .box02 {
-    color: #eb9617;
+    color: #e7a01b;
     background-color: #eb961718;
 }
 
 .box03 {
-    color: #4c966b;
+    color: #00bb8f;
     background-color: #4c966b18;
 }
 
 .box04 {
-    color: #60319c;
+    color: #1125d6;
     background-color: #60319c18;
 }
 
 
 button {
     display: block;
-    width: 250px;
-    margin: 40px auto;
+    width: 230px;
+    margin: auto;
     padding: 15px 0;
     border: none;
     border-radius: 30px;
@@ -153,15 +170,34 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
     background-image: var(--gradient-1);
 }
 
 
 @media(max-width: 700px) {
     .container {
-        display: inline-block;
+        display: block;
+        margin: auto;
+        width: 330px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
     }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@media(max-width: 400px) {
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px; text-align: center;
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
