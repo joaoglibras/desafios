@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@font-face {
+    font-family: versus-medium;
+    src: url(fonts/versus-medium.otf) format("opentype");
+}
+
+:root {
+    --sedan: #E28525;
+    --suv: #016972;
+    --luxury: #00403F;
+    --paragraph: #ffffffbb;
+
+    --title: versus-medium;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* container */
+.global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.container {
+    color: white;
+    display: flex;
+    max-width: 1000px;
+}
+
+/* cards */
+.card {
+    padding: 50px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
+}
+
+.card h1 {
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2.5em;
+    margin: 30px 0;
+}
+.card p {
+    color: var(--paragraph);
+    font-family: var(--paragraph);
+    line-height: 1.8em;
+    height: 144px;
+}
+
+/* cards individual */
+.card-sedan {
+    background-color: var(--sedan);
+    border-radius: 10px 0 0 10px;
+}
+.card-sedan button {
+    color: var(--sedan);
+}
+
+.card-suv {
+    background-color: var(--suv);
+}
+.card-suv button{
+    color: var(--suv);
+}
+
+.card-luxury {
+    background-color: var(--luxury);
+    border-radius: 0 10px 10px 0;
+}
+.card-luxury button {
+    color: var(--luxury);
+}
+
+
+/* Button Global */
+button {
+    display: block;
+    border: none;
+
+    width: 70%;
+    height: 50px;
+
+    background-color: white;
+    border-radius: 50px;
+
+    font-size: 0.9em;
+    font-weight: bold;
+
+    margin-top: 100px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 15px;
+
+    text-align: center;
+    font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+    .global-container {
+        display: block;
+        height: auto;
+    }
+
+    .container {
+        display: block;
+        margin: auto;
+        width: 500px;
+    }
+
+    .card-sedan{
+        border-radius: 0 0 0 0;
+    }
+    .card-luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+
+    footer {
+        margin-top: 20px;
+        position: static;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+}
