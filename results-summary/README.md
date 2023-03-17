@@ -6,6 +6,6 @@ Não usei o JavaScript disponibilizado pelo Frontend Mentor, minha solução par
 
 [Meu perfil no Frontend Mentor](https://www.frontendmentor.io/profile/joaoglibras)
 
-##Preview do site
+## Preview do site
 
 ![Design preview for the QR code component coding challenge](https://i.imgur.com/5NEQvpL.png)
