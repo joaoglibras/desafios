@@ -10,4 +10,4 @@ A parte mais difícil do desafio foi conseguir colocar a *div* a 90 graus no *gl
 
 ### Preview do site:
 
-![Design preview for the QR code component coding challenge](https://i.imgur.com/vY6qaGU.png)
+![Design preview for the QR code component coding challenge](https://i.imgur.com/khvKUrq.png)
