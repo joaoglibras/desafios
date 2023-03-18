@@ -2,7 +2,7 @@
 
 ## Sobre o desafio
 
-Fui desafiado pelo [Wallyson Ruan](https://github.com/wallysonruanTW). O objetivo era reproduzir a capa do livro "O Homem à Procura de Si Mesmo - Rollo May".
+Fui desafiado pelo [Wallyson Ruan](https://github.com/wallysonruanTW). O objetivo era reproduzir a capa do livro "O Homem à Procura de Si Mesmo - Rollo May" usando HTML e CSS.
 
 ## O processo
 
