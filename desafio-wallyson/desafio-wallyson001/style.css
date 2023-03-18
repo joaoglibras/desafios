@@ -40,10 +40,11 @@ body {
 
 .global-container {
     position: relative;
-    width: clamp(80%, 500px);
-    aspect-ratio: 1 / 1.52;
+    max-width: 500px;
+    max-height: 760px;
+    aspect-ratio: 1 / 1.5;
 
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
 }
 
 /* boxes */
@@ -134,7 +135,7 @@ body {
     height: 48%;
 }
 
-@media(max-width: 520px) {
+@media(max-width: 500px) {
     .title {
         font-size: 8vw;
     }
