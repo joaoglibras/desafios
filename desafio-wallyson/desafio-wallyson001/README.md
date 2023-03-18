@@ -9,5 +9,6 @@ Fui desafiado pelo [Wallyson Ruan](https://github.com/wallysonruanTW). O objetiv
 A parte mais difícil do desafio foi conseguir colocar a *div* a 90 graus no *global-container*. Isso me fez aprender um pouco sobre *position*.
 
 ### Preview do site:
+[Veja o site no GitHub Pages](https://joaoglibras.github.io/desafios/desafio-wallyson/desafio-wallyson001/)
 
 ![Design preview for the QR code component coding challenge](https://i.imgur.com/khvKUrq.png)
