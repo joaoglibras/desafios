@@ -189,6 +189,7 @@ footer a {
 .star-box {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   padding: 1em;
   width: 100%;
@@ -197,6 +198,9 @@ footer a {
 .star-box1 {margin-right: 6em;}
 .star-box2 {margin-right: 3em}
 .star-box3 {margin-right: 0;}
+
+.star {margin: 0;}
+
 
 
 /* Down container desktop*/
