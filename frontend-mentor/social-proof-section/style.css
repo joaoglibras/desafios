@@ -208,6 +208,7 @@ footer a {
   display: flex;
   column-gap: 3.33%;
   height: 50%;
+  max-height: 280px;
 } 
 
 /* Purple container desktop*/
