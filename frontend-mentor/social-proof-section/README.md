@@ -11,5 +11,5 @@ Não usei os arquivos svg fornecidos para fazer a versão desktop do site. Prete
 ### Preview do site:
 [Veja o site no GitHub Pages](https://joaoglibras.github.io/desafios/frontend-mentor/social-proof-section/)
 
-![Design preview for the QR code component coding challenge](https://i.imgur.com/r8d8OAz.png)
+![Design preview for the QR code component coding challenge](https://i.imgur.com/0cIJJdM.png)
 
