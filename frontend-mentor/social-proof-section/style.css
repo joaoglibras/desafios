@@ -140,7 +140,7 @@ footer a {
 
 
 /* Desktop media query */
-@media(min-width: 1250px) {
+@media(min-width: 1250px) and (min-height: 620px) {
   body {
     display: flex;
     justify-content: center;
@@ -183,7 +183,6 @@ footer a {
  .star-container {  
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: center;
   margin: 0;
  }
@@ -194,12 +193,11 @@ footer a {
 
   padding: 1em;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
-.star-box1 {margin-right: 6em;}
-.star-box2 {margin-right: 3em}
-.star-box3 {margin-right: 0;}
-
+.star-box1 {align-self: flex-start;}
+.star-box2 {align-self: center;}
+.star-box3 {align-self: flex-end;}
 .star {margin: 0;}
 
 
