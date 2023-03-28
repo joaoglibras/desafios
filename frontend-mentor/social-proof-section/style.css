@@ -140,7 +140,7 @@ footer a {
 
 
 /* Desktop media query */
-@media(min-width: 1250px) and (min-height: 620px) {
+@media(min-width: 1250px) and (min-height: 600px) {
   body {
     display: flex;
     justify-content: center;
