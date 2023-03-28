@@ -148,9 +148,9 @@ footer a {
     height: 100dvh;
   }
   .global-container {
-    padding: 0;
+    padding: 0em;
     width: 80vw;
-    height: 85dvh;
+    height: 80%;
     justify-items: center;
     align-items: center;
     max-width: 1200px;
@@ -163,6 +163,7 @@ footer a {
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
     height: 50%;
+    margin-bottom: 0;
   }
 
   /* Main container desktop*/
@@ -204,21 +205,29 @@ footer a {
 
 
 /* Down container desktop*/
+
 .down-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, 31.1%);
+  display: flex;
   column-gap: 3.33%;
   height: 50%;
-}
+} 
 
 /* Purple container desktop*/
 .purple-box {
-  height: 70%;
+  height: 85%;
 }
-.purple-box1 {margin-top: 0;}
-.purple-box2 {margin-top: 1em;}
-.purple-box3 {margin-top: 2em;}
+.purple-box1 {
+  margin: 0;
+  align-self: flex-start;
+}
+.purple-box2 {
+  margin: 0;
+  align-self: center;
+}
+.purple-box3 {
+  margin: 0;
+  align-self: flex-end;
+}
 
 
 /* Footer desktop*/
