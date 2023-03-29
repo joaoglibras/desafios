@@ -85,7 +85,7 @@ p {font-size: 0.8em;}
 }
 
 .question:hover h2 {
-    color: var(--orange);
+    color: var(--orange);              
     transition-duration: 0.3s;
 }
 
