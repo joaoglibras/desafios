@@ -25,7 +25,6 @@ h1{
     text-align: center;
     color: var(--title);
     font-size: 2em;
-    margin-top: 0.2em;
 }
 h2 {
     font-size: 0.8em;
@@ -41,29 +40,32 @@ p {font-size: 0.8em;}
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.13);
 
     width: 280px;
-    height: 500px;
 
-    margin-top: 5em;
+    margin-top: 6em;
+}
+
+.second-container {
+    height: 350px; 
+    margin-top: 1em;
 }
 
 .image {
     display: block;
-    width: 280px;
+    width: 80%;
     margin: auto;
-    margin-top: -8em;
-
-    position: absolute;
-    top: 200px;
+    margin-top: -8.3em;
+    position: sticky;
 
 }
 .image-shadow {
     display: block;
-    width: 100%;
+    width: 80%;
 
-    margin-top: -2.4em;
+    margin: auto;
+    margin-top: -5em;
 }
 
-.dropdown {
+.question {
     padding: 1.2em 0;
     border-bottom: 1px solid rgb(231, 231, 231);
 
@@ -72,12 +74,20 @@ p {font-size: 0.8em;}
     align-items: center;
 }
 
-.dropdown img {
+.arrow {
     align-self: center;
 }
 
-.dropdown p {
+.answer {
     display: none;
+    padding-bottom: 1em;
+}
+.question-box:hover > .answer{
+    display: block;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.question-box:hover > .question {
+    border: none;
 }
 
  /* Footer */
@@ -93,7 +103,6 @@ footer a {
 }
 footer a:hover {
     color: #ff906e;
-    filter: ;
 }
 footer img {
     width: 12px;
