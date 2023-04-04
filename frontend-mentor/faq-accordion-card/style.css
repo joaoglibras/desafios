@@ -50,7 +50,7 @@ p {font-size: 0.8em;}
     margin-top: 1em;
 }
 
-.image {
+.image-woman {
     display: block;
     width: 80%;
     margin: auto;
@@ -117,4 +117,82 @@ footer a:hover {
 footer img {
     width: 12px;
     filter: invert(100%);
+}
+
+.desktop {display: none;}
+
+/* Desktop media query */
+
+@media (min-width: 900px) {
+
+.mobile {display: none;}
+.desktop {display: flex;}
+
+
+body {
+    background-image: var(--background);
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-container {
+    margin-top: 2em;
+    width: fit-content;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.first-container {
+    width: 40vw;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.second-container {
+    width: 40vw;
+    max-width: 400px;
+}
+
+.second-container h1 {
+    text-align: left;
+}
+
+.question {
+    max-width: 300px;
+}
+
+/* Image */
+.image-box {
+    z-index: 2;
+    position: sticky;
+    margin-left: -7.8em;
+    margin-top: 6em;
+    width: 200px;
+    align-self: center;
+}
+.image-woman {
+    z-index: 1;
+    position: sticky;
+    width: 500px;
+    margin: 0;
+    margin-left: -99px;
+    align-self: center;
+    object-position: -80px;
+}
+.image-shadow {
+    width: 800px;
+    height: 515px; /* ? */
+    margin: 0;
+    margin-left: -472px;
+    align-self: center;
+    /* outline: 1px solid red; ??? */ 
+    object-position: -400px;
+}
+}
 }
